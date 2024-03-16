@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    font-size: large;
+    font-weight: bold;
+}
+
+.images img {
+   width: 100%;
+   margin: 10px 0;
+}
+
+.images p {
+   font-size: medium;
+}
+
+button {
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+/* Thêm các kiểu dáng khác khi cần thiết */

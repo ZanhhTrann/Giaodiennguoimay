@@ -1,0 +1,418 @@
+/* resources/css/app.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Tùy chỉnh thêm CSS của bạn dưới đây */
+a{
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+    width: 225px;
+    background-color: #333;
+    color: #fff;
+    padding-left: 25px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 5px;
+    border-bottom:1px solid whitesmoke ;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.sidebar li:hover .dropdown-content {
+    margin: 0 35%;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar li:hover {
+    /* padding: 10px 0; */
+    background-color: #2d3748;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    background-color: #718096;
+    width: 100%;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.main_content{
+    padding-top: 5%;
+    padding-left: 300px;
+}
+
+.content_item{
+    margin: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    border-radius:50%;
+
+}
+
+.pagination a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination .active {
+    background-color: rgb(74, 74, 74); /* Màu nền */
+}
+
+.pagination .active a{
+    color: #000; /* Màu nền */
+    border:rgb(255, 255, 255) solid var(--blue); /* Đường viền bo xung quanh */
+}
+
+/* Thêm vào phần CSS của bạn */
+.admin_btns {
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    background-color:#2d3748;
+}
+
+.admin_btns:hover {
+    background-color: #718096;
+    color: #000;
+}
+
+.Search{
+    height: 30px;
+    width: 60%;
+    margin-top: 10px;
+    border-radius:5px ;
+}
+.search_label{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.btns_div{
+    margin: 10px 0;
+}
+.admin_container_btns{
+    display: block;
+    margin: 10px 10px;
+}
+.ac_btns{
+    width: 100px;
+    margin: 10px 0;
+}
+/* Dropdown menu styles */
+header{
+    padding: 10px 0;
+    padding-left: 85%;
+    color: #fff;
+    background-color: #333;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #2d3748;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    width: 30px;
+  }
+.mainImgs{
+    width: 100px;
+}
+  .dropdown a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #4a5568;
+    border-radius: 5px;
+  }
+
+/* Products */
+
+.admin_categories{
+    display: flex;
+    list-style: none;
+    background-color: #fff;
+    padding: 30px 0;
+}
+.admin_category-item{
+
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    text-decoration: none;
+
+}
+.admin_category-item.active{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #515152;
+    color: #fff ;
+    border-bottom: 2px solid rgb(127, 127, 246) ;
+}
+.cart_info-table{
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+.cart_info_content {
+    margin: 10px 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid  black;
+    border-right: 1px solid  black;
+    border-bottom: 1px solid  black;
+    overflow: auto;
+    border-radius: 10px;
+    height: 55%;
+    border-collapse: collapse;
+    /* width: 100%; */
+
+}
+.cart_info_content::-webkit-scrollbar {
+    width: 12px; /* Đặt chiều rộng thanh cuộn */
+}
+
+
+.cart_info_content::-webkit-scrollbar-thumb {
+    background-color:#2d3748; /* Màu nền của thanh cuộn */
+    border-radius: 10px; /* Độ cong góc của thanh cuộn */
+}
+.cart_info_content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color:#ffffff; /* Màu nền phía sau thanh cuộn */
+}
+
+.cart_info-table tr {
+    border-top: 1px solid  black;
+    border-bottom: 1px solid  black;
+    border-left: 1px solid  black;
+    border-right: 1px solid  black;
+}
+.cart_info-table th {
+    font-size: 13px;
+    color: var(--dark);
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.cart_info-table .column-1 {
+    width: 133px;
+    padding-left: 30px;
+}
+.cart_info-table .column-2 {
+    width: 220px;
+}
+.cart_info-table .column-3 {
+    width: 120px;
+}
+.cart_info-table .column-4 {
+    width: 145px;
+}
+.cart_info-table .column-5 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-6 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-7 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-8 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-9 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-10 {
+    width: 145px;
+    /* text-align: right; */
+}
+.cart_info-table .column-11 {
+    width: 145px;
+    /* text-align: right; */
+}
+
+.cart_info-table .table_row .column-1 {
+    padding: 0 0 0px 30px;
+}
+.cart_info-table .table_row .column-1 p {
+    /* padding: 0 5px; */
+    display: none;
+}
+.casSearch{
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.long{
+    height: 100px;
+    width: 80%;
+    text-align: left;
+    vertical-align: top;
+    font-size: 10px;
+
+}
+/*  */
+.avatar {
+    position: relative;
+}
+#changeIcon {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 80px;
+    background-color: #ffffff62;
+    transform: translate(-50%, -50%);
+    display: none; /* Ẩn biểu tượng change khi không hover */
+    cursor: pointer;
+    /* Thêm kiểu CSS khác tùy vào nhu cầu thiết kế của bạn */
+}
+
+.avatar:hover #changeIcon {
+    display: block; /* Hiển thị biểu tượng change khi hover */
+}
+
+.change-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+#changeIcon .change_icon {
+    width: 10px;
+    height: 10px;
+}
+
+.item_img{
+    width: 100px;
+}
+.change_data{
+    /* border: none; */
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--light-bg_features);
+    border-radius: 5px;
+}

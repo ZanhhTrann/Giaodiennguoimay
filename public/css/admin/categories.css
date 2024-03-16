@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+tbody tr th{
+    background: #f4f4f4;
+
+}
+
+.main_content{
+    padding-top: 5%;
+    /* padding-left: 300px;  */
+}
+section {
+    /* padding: 20px; */
+    padding: 0 10px;
+    background-color: aliceblue;
+    height: 90vh;
+    overflow-x: auto;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+form {
+    display: flex;
+    max-width: 550px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    width: 100px;
+    padding: 5px 0;
+    color: #333;
+}
+
+
+#casSearch {
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+ .btn{
+    width: 100px;
+    padding: 0 10px;
+ }
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    overflow-x: auto;
+}
+
+table tbody tr{
+    height: 10%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar {
+    width: 225px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.catDetail{
+    display: block;
+}

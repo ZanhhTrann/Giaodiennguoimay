@@ -1,0 +1,132 @@
+.section_about {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    width: 100%;
+}
+
+.img_content {
+    padding: 92px 15px;
+    background-image: url(../../imgs/slide-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -150px;
+
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--light-bg);
+}
+
+.about_review{
+    margin: 80px 125px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_review .celebrity{
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_review .celebrity h2{
+    text-align:center;
+    font-size:xx-large;
+}
+.about_review .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.about_review .left .content .about_text{
+    padding: 0 0 0 70px;
+    line-height: 1.3em;
+    display: inline-block;
+     vertical-align: middle;
+
+}
+
+.about_review .right .content .about_text{
+    padding: 0 70px 0 0;
+    line-height: 1.3em;
+
+}
+
+.about_review .content .about_text h3{
+    /* text-align: center; */
+    padding-bottom: 25px;
+}
+.about_review .content .about_text > p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 26px;
+    color: var(--light-text);
+}
+.about_review .review_content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.about_review .left .banner_review::before{
+    bottom: 35px;
+    left: -30px;
+}
+.about_review .banner_review {
+    position: relative;
+    z-index: 1;
+}
+.about_review .banner_review::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    width: 350px;
+    height: 550px;
+    border: 3px solid var(--light-text-footer);
+    position: absolute;
+}
+.about_review .banner_review::before {
+    bottom: -35px;
+    left: -30px;
+}
+.about_review .banner_review-img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.about_review .banner-img:hover img {
+    transform: scale(1.15);
+}
+.about_review .banner-img img {
+    width: 350px;
+    height: 550px;
+    object-fit: fill;
+}
+
+.about_review .lend{
+    padding: 50px 0;
+    display: flex;
+    height: 1px;
+    justify-content: center;
+}
+
+.about_review .lend span{
+    background-color: black;
+    height: 1px;
+    width: 450px;
+}
+
+.about_review .slogen{
+    display: flex;
+    justify-content: center;
+}
+
+.about_review .slogen h2{
+    font-family:-webkit-body;
+}

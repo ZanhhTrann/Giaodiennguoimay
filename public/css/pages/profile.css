@@ -1,0 +1,96 @@
+
+.profile{
+    width: 100%;
+    height: 100%;
+    padding: 15% 0;
+}
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    border:1px rgb(86, 86, 86) solid ;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.avatar {
+    position: relative;
+}
+#changeIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 100px;
+    background-color: #ffffff62;
+    transform: translate(-50%, -50%);
+    display: none; /* Ẩn biểu tượng change khi không hover */
+    cursor: pointer;
+    /* Thêm kiểu CSS khác tùy vào nhu cầu thiết kế của bạn */
+}
+
+.avatar:hover #changeIcon {
+    display: block; /* Hiển thị biểu tượng change khi hover */
+}
+
+#changeIcon .change_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.item_img{
+    width: 100px;
+}
+.change_data{
+    /* border: none; */
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--light-bg_features);
+    border-radius: 5px;
+}
+
+#addrest{
+    width: 85%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+}
+
+.user-name h2 {
+    margin: 0;
+}
+
+.info-section {
+    margin-top: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.change-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
